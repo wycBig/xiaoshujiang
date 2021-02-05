@@ -20,3 +20,4 @@
 
 ``` mkdir data   服务器密码：0711Ch!@#
 ```
+安装教程：https://help.aliyun.com/document_detail/116727.html
