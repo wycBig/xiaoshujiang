@@ -80,5 +80,23 @@
 命令：
 1.grant all on *.* to 'wyc'@'%' IDENTIFIED BY '0711Ch!@#'
 2.flush privileges;
-用户名：
-密码：
+用户名：root
+密码：0711Ch!@#
+
+## Navicat链接sql报错：
+
+``` ERROR 1045 (28000): Access denied for user 'root'@'8.131.103.29' (using password: YES)
+```
+
+### 1. 先用localhost登录
+
+``` mysql -u root -p
+		Enter password: 正确密码
+```
+## 2. 执行授权命令
+
+``` mysql> grant all privileges on *.* to root@'%' identified by '密码';
+```
+
+### 3. 退出再试
+退出mysql，重启mysql，试修改的数据生效。然后在使用 mysql -uroot -h xxx.xxx.xxx.xxx. -p  登录
