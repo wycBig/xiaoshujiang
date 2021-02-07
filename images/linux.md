@@ -64,6 +64,12 @@
 			Success.
 			All done!
 			```
+8.远程访问MySQL数据库
+	``` 
+	grant all on *.* to 'wyc'@'%' IDENTIFIED BY '0711Ch!@#';
+	flush privileges;
+
+	```
 
 ## 安装教程：
 ``` https://help.aliyun.com/document_detail/116727.html
