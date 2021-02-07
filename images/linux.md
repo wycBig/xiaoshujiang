@@ -7,17 +7,7 @@
 2.cat /etc/passwd | grep mysql
 3.groupadd mysql
 4.useradd -r -g  mysql mysql  （2-4：创建用户组及用户）
-一、下载相关的安装包
 
-``` wget https://dev.mysql.com/get/Downloads/MySQL-5.7/mysql-5.7.24-linux-glibc2.12-x86_64.tar.gz
-```
-二、解压文件，并将文件改名
-
-``` tar xzvf mysql-5.7.24-linux-glibc2.12-x86_64.tar.gz  ：解压文件
-       mv mysql-5.7.24-linux-glibc2.12-x86_64/ mysql ：重命名
-```
-三、创建data文件夹，在mysql目录中
-
-``` mkdir data   服务器密码：0711Ch!@#
-```
-安装教程：https://help.aliyun.com/document_detail/116727.html
+## 安装教程：
+https://help.aliyun.com/document_detail/116727.html
+服务器mysql密码：0711Ch!@#
