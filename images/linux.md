@@ -11,3 +11,10 @@
 ## 安装教程：
 https://help.aliyun.com/document_detail/116727.html
 服务器mysql密码：0711Ch!@#
+
+### 远程登录访问：
+命令：
+1.grant all on *.* to 'wyc'@'%' IDENTIFIED BY '0711Ch!@#'
+2.flush privileges;
+用户名：
+密码：
