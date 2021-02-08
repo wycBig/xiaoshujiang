@@ -116,11 +116,16 @@
 			rpm -qa |grep lrzsz
 			```
 	1.3，输入命令，拉取要传输的文件
-			``
-			` rz
-			```
+		``` 
+		rz
+		```
 			
-一.解压nacos安装包（zip包要用unzip命令解压）
+一、解压nacos安装包（zip包要用unzip命令解压）
 ``` 
 	unzip nacos-server-1.2.1.zip
+```
+二、启动nacos（需要安装jdk环境）
+
+``` 
+	sh startup.sh -m standalone
 ```
