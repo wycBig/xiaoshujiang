@@ -100,3 +100,27 @@
 
 ### 3. 退出再试
 退出mysql，重启mysql，试修改的数据生效。然后在使用 mysql -uroot -h xxx.xxx.xxx.xxx. -p  登录
+
+## nacos安装：
+
+### 准备条件：
+
+1.下载nacos安装包
+2.使用文件传输工具，将安装包传输到linux
+	1. 1，下载文件传输工具
+			```
+				yum install lrzsz -y
+			```
+	1.2，查看文件包
+			```
+			rpm -qa |grep lrzsz
+			```
+	1.3，输入命令，拉取要传输的文件
+			``
+			` rz
+			```
+			
+一.解压nacos安装包（zip包要用unzip命令解压）
+``` 
+	unzip nacos-server-1.2.1.zip
+```
