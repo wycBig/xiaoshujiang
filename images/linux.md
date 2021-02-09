@@ -129,3 +129,8 @@
 ``` 
 	sh startup.sh -m standalone
 ```
+三、浏览器登录nacos，确认nacos是否能被访问（云服务器配置安全组，开放相关端口）
+
+``` 
+http://8.131.103.29:8848/nacos/
+```
