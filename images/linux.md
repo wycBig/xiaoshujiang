@@ -134,3 +134,35 @@
 ``` 
 http://8.131.103.29:8848/nacos/
 ```
+
+## 安装jdk
+1.下载安装包
+
+``` 
+https://www.oracle.com/java/technologies/javase/javase-jdk8-downloads.html
+```
+2.使用文件传输工具，将安装包传输到linux中，然后解压文件
+
+``` 
+rz
+tar -zxvf jdk-8u251-linux-x64.tar.gz
+```
+3.配置环境
+
+``` 
+vim /etc/profile
+```
+4.修改配置文件
+
+``` 
+export JAVA_HOME=/xxx/xxx/jdk1.8.0_251
+export JRE_HOME=${JAVA_HOME}/jre
+export CLASSPATH=.:${JAVA_HOME}/lib:${JRE_HOME}/lib:$CLASSPATH
+export JAVA_PATH=${JAVA_HOME}/bin:${JRE_HOME}/bin
+export PATH=$PATH:${JAVA_PATH}
+```
+5.重新加载配置文件
+
+``` 
+source /etc/profile
+```
