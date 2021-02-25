@@ -166,3 +166,5 @@ export PATH=$PATH:${JAVA_PATH}
 ``` 
 source /etc/profile
 ```
+
+6.tomcat端口号8075
