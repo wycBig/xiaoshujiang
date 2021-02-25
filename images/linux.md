@@ -166,5 +166,27 @@ export PATH=$PATH:${JAVA_PATH}
 ``` 
 source /etc/profile
 ```
+## 安装tomcat
+1.下载相关安装包
+	选择core：tar.gz(pgp,sha512)文件下载
+	
+2.解压tomcat压缩包
+
+``` 
+tar -zxvf xxxxx.tar.gz
+```
+3. 进入tomcat -> config 文件夹下，打开service.xml文件 
+
+```
+# 修改默认的HTTP端口，由8080更改为自定义的(取值范围1-65535)只要没被占用即可。这里改为8030
+<Connector port="8030" protocol="HTTP/1.1"
+               connectionTimeout="20000"
+               redirectPort="8443" />
+# <Server port="8005" shutdown="SHUTDOWN"> 
+SHUTDOWN 端口，你可以用 telnet 命令玩一下：telnet 8005 进去后，输入 SHUTDOWN 后，tomcat 就被关闭了。无需更改这个端口。
+# <Connector port="8009" protocol="AJP/1.3" redirectPort="8443" />
+AJP端口，是用于与 Apache httpd 服务器进行 AJP 通信用的，是给 mod_jk 库用的，如果不用 Apache httpd 服务器那这个端口可以不用理会。
+```
+4. 修改阿里云服务器安全组配置，将服务器端口暴露出来
 
 6.tomcat端口号8075
